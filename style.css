@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Huninn&family=Varela+Round&display=swap');
+
+
+/* רקע וכתב */
+body {
+  margin: 0;
+  font-family: 'Varela Round', sans-serif;
+  background: linear-gradient(135deg, #0a1f44, #132a5f);
+  color: #dfe8ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  direction: rtl;
+}
+
+/* מסגרת המשחק */
+.container {
+  background-color: #142a55;
+  padding: 40px;
+  border-radius: 25px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+  text-align: center;
+  max-width: 400px;
+  width: 90%;
+}
+
+/* כותרת */
+h1 {
+  color: #accbff;
+  margin-bottom: 10px;
+  font-size: 2.5em;
+  animation: pop 1s ease;
+}
+
+.subtitle {
+  font-size: 1.1em;
+  color: #c8d9ff;
+  margin-bottom: 20px;
+}
+
+/* שדה קלט */
+input[type="number"] {
+  padding: 12px;
+  font-size: 1.2em;
+  width: 80px;
+  border: 2px solid #5b82c8;
+  border-radius: 10px;
+  text-align: center;
+  margin: 10px 0;
+  background-color: #e4ecff;
+  color: #102a50;
+}
+
+/* כפתור */
+button {
+  background: linear-gradient(to right, #3367a6, #1e4f8d);
+  color: #f0f8ff;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1em;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.3s;
+  margin-top: 10px;
+}
+
+button:hover {
+  transform: scale(1.05);
+  background: linear-gradient(to right, #2a5592, #163f74);
+}
+
+/* תוצאה */
+#msg , #result{
+  margin-top: 20px;
+  font-size: 1.3em;
+  color: #e8f1ff;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* אנימציות */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes pop {
+  0% { transform: scale(0.5); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}

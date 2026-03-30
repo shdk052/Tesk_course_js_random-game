@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>🎲 משחק ההגרלות של שחר 🎲</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel ="script" href="script.js">
+
+</head>
+<body>
+  <div class="container">
+    <h1>🎉 משחק ההגרלות של שחר 🎉</h1>
+    <p class="subtitle">נסה לנחש את המספר שעלה בהגרלה!</p>
+
+    <label for="num">בחר מספר בין 1 ל-5:</label><br>
+    
+    <input type="number" id="num" min="1" max="5" required>
+    
+    <br>
+    <button onclick="game()">נחש</button>
+
+    <p id="msg"></p>
+    
+    <h3 id="result"></h3>
+
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
