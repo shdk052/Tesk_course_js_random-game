@@ -54,6 +54,7 @@ input[type="number"] {
 
 /* כפתור */
 button {
+  font-family: 'Varela Round', sans-serif;
   background: linear-gradient(to right, #3367a6, #1e4f8d);
   color: #f0f8ff;
   border: none;
